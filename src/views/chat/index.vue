@@ -166,7 +166,7 @@ function clearHistory() {
 <template>
   <div class="chat-container">
     <div class="chat-card">
-      <div class="chat-card-header"></div>
+<!--      <div class="chat-card-header"></div>-->
       <div class="chat-card-body">
         <template v-for="(item, index) in chatting">
           <HumanChat :key="index" v-if="item.role === 'user'" :content="item.content" :error="item.error"></HumanChat>

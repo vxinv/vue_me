@@ -20,7 +20,8 @@ import LayoutFooter from './LayoutFooter.vue'
           <div class="layout-main">
             <router-view></router-view>
           </div>
-          <LayoutFooter class="el-footer" />
+<!--          去掉-->
+<!--          <LayoutFooter class="el-footer" />-->
         </el-scrollbar>
       </el-main>
     </el-container>
@@ -50,10 +51,13 @@ import LayoutFooter from './LayoutFooter.vue'
   }
 
   .layout-main {
+  /*calc(
+  100vh - var(--el-header-height) - var(--app-content-padding) - var(--app-content-padding) - var(
+  --el-footer-height
+  )
+  );*/
     min-height: calc(
-      100vh - var(--el-header-height) - var(--app-content-padding) - var(--app-content-padding) - var(
-          --el-footer-height
-        )
+      100vh - var(--el-header-height) - var(--app-content-padding) - var(--app-content-padding)
     );
     padding: 20px;
   }
